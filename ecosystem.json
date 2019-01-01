@@ -1,7 +1,7 @@
 {
     "apps" : [{
         "name"      : "front",
-        "script"    : "server.js",
+        "script"    : "./server.js",
         "env": {
             "COMMON_VARIABLE": "true"
         },
