@@ -130,34 +130,8 @@ class MdEditor extends Component {
         <Button type='primary' className='f-r' onClick={()=>this.handleSubmit()}>留个言吧</Button>
         
         <style global jsx>{`
-        .CodeMirror{
-          min-height: auto;
-          border-radius: 0;
-        }
-        .CodeMirror pre{
-          font-size: 14px;
-        }
-				.CodeMirror .CodeMirror-code .cm-comment{
-          color: #333;
-        }
-        .CodeMirror-scroll{
-          min-height: 100px;
-        }
-        .editor-toolbar:before,
-        .editor-toolbar:after{
-          margin: 0;
-        }
-        .editor-toolbar{
-          background: #efefef;
-        }
-        .editor-toolbar{
-          border-radius: 0;
-        }
         button{
           margin-top: 10px;
-        }
-        .editor-preview pre, .editor-preview-side pre{
-          background: none;
         }
 				`}</style>
       </div>

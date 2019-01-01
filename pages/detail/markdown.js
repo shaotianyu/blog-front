@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 import { highlightAll } from 'prismjs';
 // import ImageRenderer from '../../component/ImageRender';
-import '../../assets/prism.less';
+// import '../../assets/prism.less';
 
 export class Markdown extends Component {
     static propTypes = {

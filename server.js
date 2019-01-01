@@ -3,9 +3,15 @@ const next = require('next')
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
+const compression = require('compression')
 
 app.prepare().then(() => {
+
   const server = express()
+
+  if (!dev) {
+    server.use(compression())
+  }
 
   server.get('/p/:id', (req, res) => {
     const actualPage = '/detail'
