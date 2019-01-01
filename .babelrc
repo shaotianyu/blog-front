@@ -1,0 +1,24 @@
+{
+    "presets": ["next/babel"],
+    "plugins": [
+			[
+				"import",	 //引入但是无效，问题待定
+				{
+					"libraryName": "antd",
+					"style": "less"
+				}
+			],
+      [
+				"@babel/plugin-proposal-decorators", 
+				{ 
+					"legacy": true 
+				}
+			],
+      [
+				"@babel/plugin-proposal-class-properties", 
+				{ 
+					"loose" : true 
+				}
+			]
+    ]
+}
