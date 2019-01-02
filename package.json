@@ -80,6 +80,6 @@
     "dev": "cross-env NODE_ENV=development node server.js",
     "build": "next build",
     "start": "cross-env NODE_ENV=production node server.js",
-    "prod": "next build && cross-env NODE_ENV=production pm2 start server.js"
+    "prod": "next build && pm2 start ecosystem.config.js --only prod-front --watch"
   }
 }
