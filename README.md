@@ -2,7 +2,7 @@
 
 #### 博客是react+next+redux+express+mongoose+antd实现的SSR
 
-这里的blog-front是前台页面展示部分，主要使用了react+redux+nextjs，后台管理系统和服务端代码部分暂不开放。
+这里的blog-front是前台页面展示部分，主要使用了react+redux+nextjs，后台管理系统(react,redux)和服务端代码(express)部分暂不开放。
 
 
 项目启动方式
