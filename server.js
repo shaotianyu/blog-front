@@ -9,6 +9,7 @@ app.prepare().then(() => {
 
   const server = express()
 
+  //开启gzip
   if (!dev) {
     server.use(compression())
   }

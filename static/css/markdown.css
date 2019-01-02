@@ -57,33 +57,33 @@
 }
 
  .CodeMirror{
-	min-height: auto;
-	-webkit-border-radius: 0;
-	   -moz-border-radius: 0;
-	        border-radius: 0;
+	min-height: auto !important;
+	-webkit-border-radius: 0 !important;
+	   -moz-border-radius: 0 !important;
+	        border-radius: 0 !important;
 }
 .CodeMirror pre{
-	font-size: 14px;
+	font-size: 14px !important;
 }
 .CodeMirror .CodeMirror-code .cm-comment{
-	color: #333;
+	color: #333 !important;
 }
 .CodeMirror-scroll{
-	min-height: 100px;
+	min-height: 100px  !important;
 }
 .editor-toolbar:before,
 .editor-toolbar:after{
-	margin: 0;
+	margin: 0 !important;
 }
 .editor-toolbar{
-	background: #efefef;
+	background: #efefef !important;
 }
 .editor-toolbar{
-	-webkit-border-radius: 0;
-	   -moz-border-radius: 0;
-	        border-radius: 0;
+	-webkit-border-radius: 0 !important;
+	   -moz-border-radius: 0 !important;
+	        border-radius: 0 !important;
 }
 
 .editor-preview pre, .editor-preview-side pre{
-	background: none;
+	background: none !important;
 }

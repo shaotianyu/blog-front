@@ -61,13 +61,15 @@ class Classify extends Component{
 					<ArticleList source={articleList} classify={classify}/>
 					<SideList source={recommendData} tagSource={tagData} classify={classify} tagHandleClick={(val)=>this.tagHandleFun(val)}/>
 				</div>
-				<Pagination 
-					total={totalPage} 
-					current={currentPage || 1}
-					defaultPageSize={pageSize}
-					onChange={this.paginationChange.bind(this)}
-					itemRender={this.paginationRender.bind(this)}
-				/>
+				<div className='pagination-wrap'>
+					<Pagination 
+						total={totalPage} 
+						current={currentPage || 1}
+						defaultPageSize={pageSize}
+						onChange={this.paginationChange.bind(this)}
+						itemRender={this.paginationRender.bind(this)}
+					/>
+				</div>
 				<style global jsx>{`
 				.ant-pagination{
 					padding-top:30px;
