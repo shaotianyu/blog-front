@@ -523,11 +523,23 @@ body{
     background: #fff;
 }
 
-.blog-detail-main{
-    width: 800px;
-    margin: 0 auto;
+.blog-detail{
     background: #ffffff;
-    padding:20px;
+    overflow: visible;
+    .mark-bar-sticky{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 100px;
+        .markdown-navigation{
+            width: auto;
+        }
+    }
+}
+
+.blog-detail-main{
+    padding:20px 35px;
+    width: 800px;
+    float: left;
 
     img{
         max-width: 100%;

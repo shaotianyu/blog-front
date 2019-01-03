@@ -30,6 +30,18 @@ class MyApp extends App {
     return null;
   }
 
+  componentDidMount(){
+    let reallyDocumentTitle
+    document.addEventListener('visibilitychange', event => {
+      if (event.target.hidden || event.target.webkitHidden) {
+        reallyDocumentTitle = document.title
+        document.title = '你若盛开，清风自来'
+      } else {
+        document.title = reallyDocumentTitle
+      }
+    }, false)
+  }
+
   
   render () {
 
