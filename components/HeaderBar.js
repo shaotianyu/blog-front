@@ -1,21 +1,48 @@
 import Header from './Header'
 import Link from 'next/link'
 import React, {Component, Fragment} from 'react'
-import {withRouter} from 'next/router'
+import Router, {withRouter} from 'next/router'
+import NProgress from 'nprogress'
+import { connect } from 'react-redux';
+import IconFont from '../config/iconfont'
+import MobileSide from './MobileSide'
+import {toggleDispatch, hideDispatch} from '../store/redux/blog-redux'
 
 @withRouter
 
+@connect(
+	state => state.SideReducer,
+	{toggleDispatch, hideDispatch}
+)
+
 class HeaderBar extends Component{
 
+    toggleSide(){
+        this.props.toggleDispatch()
+    }
+
+    progress(){
+        //进度条
+        Router.onRouteChangeStart = (url) => NProgress.start()
+        Router.onRouteChangeComplete = () =>  {
+            this.props.hideDispatch();
+            NProgress.done();
+        }
+        Router.onRouteChangeError = () => NProgress.done()
+    }
 
     render(){
+        this.progress();
         const {pathname} = this.props.router;
         const blogPath = ['/blog', '/detail', '/classify'];
+        const {sideShow} = this.props;
         return  (
             <Fragment>
                 <Header />
+                <MobileSide pathname={pathname} blogPath={blogPath} sideShow={sideShow} toggle={()=>this.toggleSide()}/>
                 <header className="head-wrap clearfix">
                     <div className="wrap-lg">
+                        <IconFont type="icon-webicon03" className='head-menu mobile-show' onClick={()=>this.toggleSide()}/>
                         <Link href="/">
                             <a><img src="/static/home-logo.png" className="head-logo"/></a>
                         </Link>

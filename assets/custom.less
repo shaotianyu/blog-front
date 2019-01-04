@@ -1,0 +1,50 @@
+body{
+    background: @body-bg;
+}
+
+.wrap-lg{
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.f-r{
+    float: right;
+}
+
+.f-l{
+    float: left;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.a-title{
+    height: 38px;
+    line-height: 38px;
+    padding: 0 15px;
+    margin-bottom: 0;
+    border-left: 4px #279bab solid;
+    font-size: 18px;
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+
+//全局统一设置隐藏类名
+@media screen and (min-width: 800px) {
+    .mobile-show{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .wrap-lg{
+        width: 100%;
+    }
+}

@@ -52,7 +52,7 @@ class Life extends Component{
 				<div className='life-main clearfix'>
 					{
 						articleList.map(item=>(
-							<div className='life-item'>
+							<div className='life-item' key={item._id}>
 							<Link as={`/p/${item._id}`} href={`/detail?id=${item._id}`}>
 								<a title={item.title}>
 									<h1 className='item-title'>{item.title}</h1>

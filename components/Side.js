@@ -13,6 +13,12 @@ const Side = () => (
                 <li>
                     <a href="javascript:void(0);" className="link-active">主页</a>
                 </li>
+                <li className='mobile-show'>
+                    <Link href="/blog"><a>技术博客</a></Link>
+                </li>
+                <li className='mobile-show'>
+                    <Link href="/life"><a>生活记录</a></Link>
+                </li>
                 <li>
                     <Link href="/about"><a>关于我</a></Link>
                 </li>

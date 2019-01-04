@@ -1,16 +1,26 @@
 
-const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+const MENU_TOGGLE = 'MENU_TOGGLE';
+const MENU_HIDE = 'MENU_HIDE';
 
-const initState = {
-    isAuth: false,
+const menuState = {
+    sideShow: false
 }
 
-//登录注册reduce
-export function admin(state=initState, action) {
+export function SideReducer(state=menuState, action) {
     switch (action.type){
-        case LOGIN_SUCCESS:
-            return {...state, isAuth:true};
+        case MENU_TOGGLE:
+            return {...state, sideShow:!state.sideShow}
+        case MENU_HIDE:
+            return {...state, sideShow:false}
         default:
             return state;
     }
+}
+
+export function toggleDispatch(){ 
+    return {type: MENU_TOGGLE}
+}
+
+export function hideDispatch(){ 
+    return {type: MENU_HIDE}
 }

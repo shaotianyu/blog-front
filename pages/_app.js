@@ -1,7 +1,6 @@
 import App, {Container} from 'next/app';
 import Router, {withRouter} from 'next/router'
 import {Provider} from 'react-redux'
-import NProgress from 'nprogress'
 import withReduxStore from '../store/with-redux-store'
 import FrontLayout from '../components/FrontLayout';
 
@@ -44,13 +43,6 @@ class MyApp extends App {
 
   
   render () {
-
-    //进度条
-    Router.onRouteChangeStart = (url) => {
-      NProgress.start()
-    }
-    Router.onRouteChangeComplete = () => NProgress.done()
-    Router.onRouteChangeError = () => NProgress.done()
 
     const { Component, pageProps, router, reduxStore } = this.props;
     return (
