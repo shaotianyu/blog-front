@@ -6,7 +6,7 @@ import NProgress from 'nprogress'
 import { connect } from 'react-redux';
 import IconFont from '../config/iconfont'
 import MobileSide from './MobileSide'
-import {toggleDispatch, hideDispatch} from '../store/redux/blog-redux'
+import {toggleDispatch, hideDispatch} from '../store/redux/menu-redux'
 
 @withRouter
 

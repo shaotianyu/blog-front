@@ -30,11 +30,11 @@ class MyApp extends App {
   }
 
   componentDidMount(){
-    let reallyDocumentTitle
+    let reallyDocumentTitle;
     document.addEventListener('visibilitychange', event => {
       if (event.target.hidden || event.target.webkitHidden) {
         reallyDocumentTitle = document.title
-        document.title = '你若盛开，清风自来'
+        document.title = '老铁快回来 | Soy'
       } else {
         document.title = reallyDocumentTitle
       }

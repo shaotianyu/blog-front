@@ -14,7 +14,7 @@ app.prepare().then(() => {
     server.use(compression())
   }
 
-  server.get('/p/:id', (req, res) => {
+  server.get('/article/:id', (req, res) => {
     const actualPage = '/detail'
     const queryParams = { 
         id: req.params.id 

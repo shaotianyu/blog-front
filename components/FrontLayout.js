@@ -1,5 +1,6 @@
 import HeaderBar from './HeaderBar'
 import FooterBar from './FooterBar'
+import { BackTop } from 'antd';
 import '../assets/styles.less'
 
 const FrontLayout = (props) => (
@@ -9,6 +10,7 @@ const FrontLayout = (props) => (
       {props.children}
 		</main>
     <FooterBar />
+    <BackTop />
   </div>
 )
 

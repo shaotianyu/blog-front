@@ -11,7 +11,7 @@ export default class Error extends React.Component {
   render() {
     return (
       <main className='error-page wrap-lg'>
-        <IconFont type="icon-icon-test" />
+        <IconFont type="icon-icon-test" className='error-anticon' />
         页面好像走丢了，你可以去
         <Link href='/blog'><a className='link-home'>首页</a></Link>
         看看
@@ -21,7 +21,7 @@ export default class Error extends React.Component {
             text-align: center;
             min-height:500px;
         }
-        .anticon{
+        .error-anticon{
             font-size:200px;
             display:block;
         }

@@ -43,7 +43,7 @@ class SideList extends Component{
                         {
                             source.map(item => (
                                 <li key={item._id}>
-                                    <Link as={`/p/${item._id}`} href={`/detail?id=${item._id}`}>
+                                    <Link as={`/article/${item._id}`} href={`/detail?id=${item._id}`}>
                                         <a title={item.title}><i className='title-tag'>#</i>{item.title}</a>
                                     </Link>
                                 </li>

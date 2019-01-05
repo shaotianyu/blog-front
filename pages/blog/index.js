@@ -95,7 +95,7 @@ Blog.getInitialProps = async function(context) {
 	const recommendList = await axios.post(BlogListRequest, {type: 'recommend', cat: 'technology'});
 	const tagList = await axios.get(TagsListRequest);
 	
-	if(articleList.data.list.length){
+	if(articleList.data.code){
         return {
 			articleData: articleList.data,
 			currentPage: Number(page),

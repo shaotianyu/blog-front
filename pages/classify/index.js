@@ -61,15 +61,17 @@ class Classify extends Component{
 					<ArticleList source={articleList} classify={classify}/>
 					<SideList source={recommendData} tagSource={tagData} classify={classify} tagHandleClick={(val)=>this.tagHandleFun(val)}/>
 				</div>
-				<div className='pagination-wrap'>
-					<Pagination 
-						total={totalPage} 
-						current={currentPage || 1}
-						defaultPageSize={pageSize}
-						onChange={this.paginationChange.bind(this)}
-						itemRender={this.paginationRender.bind(this)}
-					/>
-				</div>
+				{
+					articleList.length ? <div className='pagination-wrap'>
+						<Pagination 
+							total={totalPage} 
+							current={currentPage || 1}
+							defaultPageSize={pageSize}
+							onChange={this.paginationChange.bind(this)}
+							itemRender={this.paginationRender.bind(this)}
+						/>
+					</div> : ''
+				}
 				<style global jsx>{`
 				.ant-pagination{
 					padding-top:30px;
@@ -93,8 +95,9 @@ Classify.getInitialProps = async function(context) {
 	}
     const classifyArticleList  = await axios.post(BlogListRequest, initPagination);
 	const recommendList = await axios.post(BlogListRequest, {type: 'recommend'});
-    const tagList = await axios.get(TagsListRequest);
-    if(classifyArticleList.data.list.length){
+	const tagList = await axios.get(TagsListRequest);
+
+	if(classifyArticleList.data.code){
         return {
             articleData: classifyArticleList.data,
             currentPage: Number(page),

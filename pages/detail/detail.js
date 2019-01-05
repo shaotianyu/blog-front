@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Icon } from 'antd';
+import IconFont from '../../config/iconfont';
 import marked from 'marked'
+import { connect } from 'react-redux';
 import hljs from 'highlight.js';
 import MarkNav from 'markdown-navbar';
-import './navbar.less'
+import {toggleDispatch} from '../../store/redux/title-redux'
 
 hljs.configure({
   tabReplace: '  ',
@@ -21,9 +22,11 @@ marked.setOptions({
   smartypants: false
 });
 
-const IconFont = Icon.createFromIconfontCN({
-    scriptUrl: '//at.alicdn.com/t/font_984288_zfefog30yj.js',
-});
+@connect(
+  state => null,
+  {toggleDispatch}
+)
+
 
 class Detail extends Component {
 
@@ -31,10 +34,16 @@ class Detail extends Component {
     super(props)
   }
 
+  componentWillUnmount(){
+    this.props.toggleDispatch();
+  }
+
   render(){
 
-    const { content, title, date, _id, tag } = this.props.articleData;
+    const { content, title, date, tag } = this.props.articleData;
+    this.props.toggleDispatch(title);
     const output = marked(content);
+    
     return(
         <main className='blog-detail wrap-lg clearfix'>
           <div className="blog-detail-main">
