@@ -3,17 +3,13 @@ import axios from 'axios';
 import { BlogDetailRequest } from '../../config/request'
 import dynamic from 'next/dynamic'
 
-const MarkEditor = dynamic(import('./detail'))
+const Detail = dynamic(import('./detail'))
 
 class Index extends Component{
     render(){
         const {articleData} = this.props;
         return(
-            <div>
-                <div className='mark-edit-wrap'>
-                    <MarkEditor articleData={articleData}/>
-                </div>
-            </div>
+            <Detail articleData={articleData}/>
         )
     }
 }

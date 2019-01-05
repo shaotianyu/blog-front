@@ -51,7 +51,7 @@ class Detail extends Component {
           </div>
           <div className='mark-bar-sticky'>
             <MarkNav
-            className="article-menu"
+            className="article-menu pc-show"
             source={content}
             headingTopOffset={80}
             />

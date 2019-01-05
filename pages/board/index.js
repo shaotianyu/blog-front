@@ -13,7 +13,7 @@ class Board extends React.Component {
         const { boardsData } = this.props;
 
         return (
-            <div className='board-main clearfix'>
+            <div className='board-main wrap-lg clearfix'>
                 <div className='board-container f-l'>
                     {boardsData.length > 0 && <BoardList boardsData={boardsData} />}
                     <FormEditor />

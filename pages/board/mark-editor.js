@@ -97,7 +97,7 @@ class MdEditor extends Component {
         this.setState({ value })
       },
       options: {
-        autofocus:true,
+        autofocus:false,
         spellChecker: false,
         forceSync: true,
         previewRender: this.renderMarkdown,

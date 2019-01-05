@@ -49,37 +49,10 @@ class Life extends Component{
 		const { pageSize} = this.state;
 		return(
 			<Fragment>
-				<div className='life-main clearfix'>
-					{
-						articleList.map(item=>(
-							<div className='life-item' key={item._id}>
-							<Link as={`/p/${item._id}`} href={`/detail?id=${item._id}`}>
-								<a title={item.title}>
-									<h1 className='item-title'>{item.title}</h1>
-									{
-										item.preview ? <img src={item.preview} className="article-preview" alt={item.title}/> : ''
-									}
-									<p className='item-desc'>{item.description}</p>
-								</a>
-								</Link>
-							</div>
-							
-						))
-					}
-					<div className='pagination-wrap'>
-						<Pagination 
-							total={totalPage} 
-							current={currentPage || 1}
-							defaultPageSize={pageSize}
-							onChange={this.paginationChange.bind(this)}
-							itemRender={this.paginationRender.bind(this)}
-						/>
+				<div className='home-main-wrap wrap-lg clearfix'>
+					<div className='life-main'>
+						<img src="/static/life-empty.jpg" alt="生活记录为空"/>
 					</div>
-					<style global jsx>{`
-					.pagination-wrap{
-						padding-top: 75px;
-					}
-					`}</style>
 				</div>
 				
 			</Fragment>

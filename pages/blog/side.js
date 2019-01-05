@@ -14,7 +14,7 @@ class SideList extends Component{
     render(){
         const {source, tagSource, classify, router} = this.props;
         return (
-            <aside className="article-side"> 
+            <aside className="article-side pc-show"> 
                 <div className="article-side-tags clearfix">
                         <Link href="/blog">
                             <a title="全部文章">

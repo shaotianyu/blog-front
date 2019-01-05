@@ -11,7 +11,7 @@ class ArticleList extends Component{
         return (
             <Fragment>  
                 <article className="article-list">
-                    <h1 className="a-title">{classify?classify:'全部文章'}</h1>
+                    <h1 className="a-title pc-show">{classify?classify:'全部文章'}</h1>
                     <ul>
                         {
                             source.map(item => (

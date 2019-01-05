@@ -13,7 +13,7 @@ class MobileSide extends Component{
         return  (
             <Fragment>
                 <main className={`mobile-memu-wrap ${sideShow ? 'menu-display' : ''}`}>
-                    <div className='menu-mask' onClick={toggle}></div>
+                    <div className='menu-mask mobile-show' onClick={toggle}></div>
                     <aside className='mobile-menu mobile-show'>
                         <ul>
                             <li>

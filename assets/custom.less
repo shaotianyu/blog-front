@@ -1,9 +1,10 @@
 body{
     background: @body-bg;
+    padding-top: 65px;
 }
 
 .wrap-lg{
-    width: 1190px;
+    width: 1090px;
     margin: 0 auto;
     position: relative;
 }
@@ -36,7 +37,7 @@ li{
 }
 
 
-//全局统一设置隐藏类名
+//全局统一
 @media screen and (min-width: 800px) {
     .mobile-show{
         display: none;
@@ -44,7 +45,13 @@ li{
 }
 
 @media screen and (max-width: 800px) {
+    body{
+        padding-top: 55px;
+    }
     .wrap-lg{
         width: 100%;
+    }
+    .pc-show{
+        display: none;
     }
 }
