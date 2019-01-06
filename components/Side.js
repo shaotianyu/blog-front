@@ -28,7 +28,7 @@ const Side = () => (
             </ul>
         </div>
         <div className="person-link">
-            <a href="https://github.com/shaotianyu" target="_blank" title="我的github"><Icon type="github" /></a>
+            <a href="https://github.com/shaotianyu/blog-front" target="_blank" title="我的github"><Icon type="github" /></a>
             <a href="https://blog.csdn.net/qq_35087256" target="_blank" title="我的csdn"><IconFont type="icon-CN_csdnnet" /></a>
         </div>
     </aside>

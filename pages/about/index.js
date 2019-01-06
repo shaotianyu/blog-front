@@ -30,12 +30,12 @@ class About extends Component{
                                     <p>2015年实习于杭州臻诚网络，打了6个月酱油，写过一丢丢java。2016年来到上海，入职琢本网络至今，任Web前端开发工程师。</p>
                                     <p>大学室友们都去做了java服务层，我真是个奇葩。</p>
                                     <p>工作这几年，主要是前端方向，mootools.js到jquery，angular1.x到angular4.x+，gulp、grunt到webpack，vue1.x到2.x，react^15到目前用的react^16+nextjs，以上这些无一精通。nodejs（express，koa）只是CURD级别。</p>
-                                    <p><a href="https://github.com/shaotianyu" target='_blank'>Github：https://github.com/shaotianyu</a>(博客源码，N年写的几个js小插件)</p>
+                                    <p><a href="https://github.com/shaotianyu/blog-front" target='_blank'>Github：https://github.com/shaotianyu/blog-front</a>(博客源码，喜欢的可以给个star支持一下)</p>
                                     <p><a href="https://blog.csdn.net/qq_35087256" target='_blank'>CSDN：https://blog.csdn.net/qq_35087256</a></p>
                                     <p>看完的书：《javascript从入门到精通》，《javascript高级程序设计》,《ES6标准入门》，《深入理解ES6》。</p>
                                     <p>本站用的一些基础技术栈：React+NextJs+Redux(我也很想知道为什么没用Mobx)实现的SSR。</p>
                                     <p>还有博客相对应的一个后台管理系统，也是基本的React、Redux，各种子级路由嵌套，然后劈里啪啦地进行增删改查。</p>
-                                    <p>博客的服务端用的是Express、Mongoose。数据库是mongodb。</p>
+                                    <p>博客的服务端用的是Express（以后打算用Nest.js重构，重构的感觉肯定很酸爽）、Mongoose。数据库是mongodb。</p>
                                     <p>That's all，thank you！</p>
                                 </div>
                             </div>
