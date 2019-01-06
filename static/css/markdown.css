@@ -43,9 +43,9 @@
 	text-decoration:underline
 }
 
-.mark-edit-wrap code,
-.board-mark code,
-.blog-detail-main code{
+.mark-edit-wrap pre code,
+.board-mark pre code,
+.blog-detail-main pre code{
 	display:block;
 	overflow-x:auto;
 	padding:10px;
@@ -54,6 +54,17 @@
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 			border-radius: 4px;
+}
+
+.mark-edit-wrap p code,
+.board-mark p code,
+.blog-detail-main p code{
+	color: #c7254e;
+	padding: 0 5px;
+    background-color: #f9f2f4;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
 }
 
  .CodeMirror{
