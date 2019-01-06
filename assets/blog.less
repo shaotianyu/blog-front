@@ -114,8 +114,11 @@
                         margin-bottom: 20px;
     
                         .article-preview{
-                            max-width: 100%;
+                            max-width: 500px;
                             display: block;
+                            @media screen and (max-width: 800px){
+                                max-width: 100%;
+                            }
                         }
     
                         .article-desc{

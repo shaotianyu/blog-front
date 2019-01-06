@@ -277,6 +277,9 @@
     &.menu-display{
         > .menu-mask{
             display: block;
+            @media screen and (min-width: 800px){
+                display: none;
+            }
         }
         > .mobile-menu{
             -webkit-transform: translate3d(0, 0, 0)  scale(1);
