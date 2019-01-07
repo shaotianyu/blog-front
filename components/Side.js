@@ -29,8 +29,17 @@ const Side = () => (
         </div>
         <div className="person-link">
             <a href="https://github.com/shaotianyu/blog-front" target="_blank" title="我的github"><Icon type="github" /></a>
-            <a href="https://blog.csdn.net/qq_35087256" target="_blank" title="我的csdn"><IconFont type="icon-CN_csdnnet" /></a>
+            <a href="https://juejin.im/user/593600b0a22b9d0058fc2edd" target="_blank" title="我的掘金"><IconFont type="icon-juejin" className='icon-juejin'/></a>
+            <a href="https://blog.csdn.net/qq_35087256" target="_blank" title="我的csdn"><IconFont type="icon-csdn"  className='icon-csdn'/></a>
         </div>
+        <style global jsx>{`
+        #common-side .person-link .icon-juejin {
+            font-size: 37px;
+            color: #3780f7;
+            position: relative;
+            top: 4px;
+        }
+        `}</style>
     </aside>
 )
   
