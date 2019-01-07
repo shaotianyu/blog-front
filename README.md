@@ -2,7 +2,10 @@
 
 #### 博客是基于react+next+redux+express+mongoose+antd实现的SSR
 
-##### 支持响应式
+##### 支持响应式，手机扫码可预览
+
+![邵天宇的个人网站](/static/qcode.png)
+
 
 后台管理系统(react,redux)和服务端代码(express,mongoose)部分暂不开放。
 
