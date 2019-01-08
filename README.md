@@ -2,6 +2,8 @@
 
 #### 博客是基于react+next+redux+express+mongoose实现的服务端渲染（SSR）
 
+#### 图片上传使用七牛云存储
+
 ##### 支持响应式，手机扫码可预览
 
 ![邵天宇的个人网站](/static/qcode.png)
