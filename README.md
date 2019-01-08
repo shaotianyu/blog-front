@@ -1,6 +1,6 @@
 #### 我的个人网站：[http://www.shaotianyu.com/](http://www.shaotianyu.com/)
 
-#### 博客是基于react+next+redux+express+mongoose+antd实现的服务端渲染（SSR）
+#### 博客是基于react+next+redux+express+mongoose实现的服务端渲染（SSR）
 
 ##### 支持响应式，手机扫码可预览
 
