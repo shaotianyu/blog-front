@@ -30,6 +30,7 @@ class MyApp extends App {
   }
 
   componentDidMount(){
+    //title变化
     let reallyDocumentTitle;
     document.addEventListener('visibilitychange', event => {
       if (event.target.hidden || event.target.webkitHidden) {
@@ -39,6 +40,16 @@ class MyApp extends App {
         document.title = reallyDocumentTitle
       }
     }, false)
+
+    //百度统计,先放在这。。
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?803566e8ccfd1931d9d8d195df3f46fe";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        console.log('22')
+    })();
   }
 
   
