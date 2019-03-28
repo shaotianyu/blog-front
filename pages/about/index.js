@@ -27,7 +27,7 @@ class About extends Component{
                                 <div className='about-desc f-l'>
                                     <p>25岁，男，LOL骨灰级玩家，段位最高是砖石5，区组艾欧尼亚。</p>
                                     <p>2016年毕业于安徽师范大学皖江学院，计算机科学与技术专业。大学期间打过工，做过流水线，发过传单，做过华尔街英语电话客服，都略有小成。</p>
-                                    <p>2015年实习于杭州臻诚网络，打了6个月酱油，写过php代码。2016年来到上海，入职琢本网络至今，任Web前端开发工程师。</p>
+                                    <p>2015年实习于杭州臻诚网络，打了6个月酱油，写过php代码。2016年来到上海，入职琢本网络，任Web前端开发。现就职于人力窝。</p>
                                     <p>工作这几年，主要是前端方向，mootools.js到jquery，angular1.x到angular4.x+，gulp、grunt到webpack，vue1.x到2.x，react^15到目前用的react^16+nextjs，以上这些无一精通。nodejs（express，koa）只是CURD级别。</p>
                                     <p><a href="https://github.com/shaotianyu/blog-front" target='_blank'>Github：https://github.com/shaotianyu/blog-front</a>(博客源码，喜欢的可以给个star支持一下)</p>
                                     <p><a href="https://blog.csdn.net/qq_35087256" target='_blank'>CSDN：https://blog.csdn.net/qq_35087256</a></p>
