@@ -3,7 +3,12 @@ import axios from 'axios';
 import { BlogDetailRequest } from '../../config/request'
 import dynamic from 'next/dynamic'
 
-const Detail = dynamic(import('./detail'))
+const Detail = dynamic(
+  import('./detail'),
+  {
+    loading: () => <img src="/static/blog-loading.gif" className='blog-loading'/>
+  }
+)
 
 class Index extends Component{
     render(){
