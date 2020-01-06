@@ -7,7 +7,7 @@ const Side = () => (
         <div className="avator-box">
             <img src="/static/avator.jpg" />
         </div>
-        <p className="name-box">邵天宇的个人网站</p>
+        <p className="name-box"></p>
         <div className="side-cat">
             <ul>
                 <li>

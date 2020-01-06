@@ -156,7 +156,7 @@
                 justify-content: center;
     }
 
-    a{
+    .home-btngroup a{
         -webkit-transition: 0.5s;
         -o-transition: 0.5s;
         -moz-transition: 0.5s;
@@ -176,28 +176,28 @@
         .anticon{
             font-size: 16px;
         }
-    }
 
-    .blog-btn{
-        .anticon {
-            margin-right: 10px;
+        &.blog-btn{
+            .anticon {
+                margin-right: 10px;
+            }
+            &:hover{
+                background: @theme ;
+                border-color: @theme ;
+            }
         }
-        &:hover{
-            background: @theme ;
-            border-color: @theme ;
-        }
-    }
-
-    .life-btn{
-       color: #000;
-       background: #ffffff;
-       .anticon {
-            margin-left: 10px;
-        }
-        &:hover{
-            background: @theme ;
-            border-color: @theme ;
-            color: #fff;
+    
+        &.life-btn{
+           color: #000;
+           background: #ffffff;
+           .anticon {
+                margin-left: 10px;
+            }
+            &:hover{
+                background: @theme ;
+                border-color: @theme ;
+                color: #fff;
+            }
         }
     }
 }

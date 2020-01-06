@@ -5,7 +5,7 @@ class FooterBar extends Component{
     render(){
         return  (
            <footer className="common-footer">
-                Design by Shaotianyu&nbsp; &nbsp;皖ICP备18006906号-1
+                {/* Design by Shaotianyu&nbsp; &nbsp;皖ICP备18006906号-1 */}
                 <style global jsx>{`
                 .common-footer {
                     margin-top: 80px;
