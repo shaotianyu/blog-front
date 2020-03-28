@@ -1,12 +1,8 @@
-import TweenOne, { TweenOneGroup } from 'rc-tween-one';
+import TweenOne from 'rc-tween-one';
 import ticker from 'rc-tween-one/lib/ticker';
-import { enquireScreen } from 'enquire-js';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom'
 
-import { Input, Button, InputNumber, Radio, Icon } from 'antd';
-
-const RadioGroup = Radio.Group;
 
 class LogoGather extends React.Component {
   static propTypes = {

@@ -19,7 +19,8 @@ marked.setOptions({
   pedantic: false,
   sanitize: true,
   smartLists: true,
-  smartypants: false
+  smartypants: false,
+  langPrefix: true
 });
 
 @connect(
@@ -60,9 +61,9 @@ class Detail extends Component {
           </div>
           <div className='mark-bar-sticky'>
             <MarkNav
-            className="article-menu pc-show"
-            source={content}
-            headingTopOffset={80}
+              className="article-menu pc-show"
+              source={content}
+              headingTopOffset={80}
             />
           </div>
         </main>

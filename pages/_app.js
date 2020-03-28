@@ -1,5 +1,5 @@
 import App, {Container} from 'next/app';
-import Router, {withRouter} from 'next/router'
+import { withRouter } from 'next/router'
 import {Provider} from 'react-redux'
 import withReduxStore from '../store/with-redux-store'
 import FrontLayout from '../components/FrontLayout';

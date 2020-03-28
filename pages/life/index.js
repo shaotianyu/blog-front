@@ -1,7 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import Link from 'next/link'
 import axios from 'axios';
-import { Pagination } from 'antd';
 import Router, {withRouter} from 'next/router'
 import { LifeListRequest } from '../../config/request'
 
@@ -39,22 +38,17 @@ class Life extends Component{
 	}
 
 	render(){
-		const { currentPage, router, isEmpty } =  this.props;
+		const { isEmpty } =  this.props;
 		if(isEmpty){
-            return false;
-        }
-		const { list, total } = this.props.articleData;
-		const articleList = list;
-		const totalPage = total;
-		const { pageSize} = this.state;
+			return false;
+		}
 		return(
 			<Fragment>
 				<div className='home-main-wrap wrap-lg clearfix'>
 					<div className='life-main'>
-						<img src="/static/life-empty.jpg" alt="生活记录为空"/>
+						作者很懒，并没有留下什么～～
 					</div>
 				</div>
-				
 			</Fragment>
 		)
 	}

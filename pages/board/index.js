@@ -1,5 +1,3 @@
-import { Comment, Avatar } from 'antd';
-import moment from 'moment';
 import axios from 'axios';
 import FormEditor from './form-editor'
 import CommetDesc from './commet-desc'

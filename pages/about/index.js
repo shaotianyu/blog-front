@@ -9,10 +9,6 @@ class About extends Component{
 				<div className='home-main-wrap about-main'>
                     <div className='wrap-lg clearfix'>
                         <div className='about-top'>
-                            <h2 className='title pc-show clearfix'>
-                                关于我
-                                <span className='desc f-r'>你若盛开，清风自来</span>
-                            </h2>
                             <div className='about-container clearfix'>
                                 <div className='about-side f-r'>
                                     <h1 className="a-title pc-show">个人信息</h1>
@@ -21,7 +17,7 @@ class About extends Component{
                                         <p>姓名：Soy&nbsp;|&nbsp;邵天宇</p>
                                         <p>职业：Web前端开发</p>
                                         <p>QQ：840812407</p>
-                                        <p>邮箱：shaotianyu6@foxmail.com</p>
+                                        <p>邮箱：m18010777026@613.com</p>
                                     </div>
                                 </div>
                                 <div className='about-desc f-l'>
