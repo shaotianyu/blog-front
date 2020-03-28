@@ -48,6 +48,13 @@ class SideList extends Component{
                             ))
                         }
                     </ul>
+                </article>
+                <article className="article-side-list" style={{marginTop: '25px'}}>
+                    <h1 className="a-title">友情链接</h1>
+                    <ul>
+                        <li><a href='https://www.ltonus.com/' target='_blank'><i className='title-tag'>🤝</i>前端这点事</a></li>
+                        <li><a href='https://chengkai.wang/' target='_blank'><i className='title-tag'>🤝</i>程凯-WEB攻城狮</a></li>
+                    </ul>
                 </article> 
             </aside>  
         )
