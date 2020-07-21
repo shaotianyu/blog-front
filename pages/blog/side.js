@@ -54,6 +54,8 @@ class SideList extends Component{
                     <ul>
                         <li><a href='https://www.ltonus.com/' target='_blank'><i className='title-tag'>🤝</i>前端这点事</a></li>
                         <li><a href='https://chengkai.wang/' target='_blank'><i className='title-tag'>🤝</i>程凯-WEB攻城狮</a></li>
+                        <li><a href='http://www.forcoding.club/' target='_blank'><i className='title-tag'>🤝</i>Anoymouscoder</a></li>
+                        <li><a href='https://kalasearch.cn/' target='_blank'><i className='title-tag'>🤝</i>卡拉搜索</a></li>
                     </ul>
                 </article> 
             </aside>  
