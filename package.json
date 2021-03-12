@@ -51,7 +51,7 @@
     "prop-types": "^15.6.0",
     "rc-tween-one": "^2.2.19",
     "react": "^16.0.0-rc.2",
-    "react-dev-utils": "^4.0.1",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.0.0-rc.2",
     "react-html-parser": "^2.0.2",
     "react-markdown": "^4.0.4",
